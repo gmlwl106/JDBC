@@ -38,7 +38,7 @@ public class BookSelect {
 			//실행
 			rs = pstmt.executeQuery();
 			
-			System.out.println("BookID -- Title -- Pubs -- PubDate -- AuthorID");
+			System.out.println("BookID -- 제목 -- 출판사 -- 출판일 -- AuthorID");
 			System.out.println("=========================================================================");
 			// 4.결과처리
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
