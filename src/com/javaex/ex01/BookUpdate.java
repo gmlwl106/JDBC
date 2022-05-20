@@ -43,7 +43,7 @@ public class BookUpdate {
 			//실행
 			int count = pstmt.executeUpdate(); //쿼리문 실행
 			
-			
+			 
 			// 4.결과처리
 			System.out.println(count+"건이 수정되었습니다.");
 			
