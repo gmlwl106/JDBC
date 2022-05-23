@@ -69,6 +69,7 @@ public class BookDao {
 		return count;
 	}
 
+	//책 수정
 	public int bookUpdate(int bookId, String title, String pubs, String pubDate, int authorId) {
 		int count = -1;
 		
@@ -132,6 +133,7 @@ public class BookDao {
 		return count;
 	}
 
+	//책 삭제
 	public int bookDelete(int bookId) {
 		int count = -1;
 		
@@ -186,6 +188,7 @@ public class BookDao {
 		return count;
 	}
 
+	//책 전체 출력
 	public List<BookVo> bookSelect() {
 		//리스트 준비
 		List<BookVo> bookList = new ArrayList<BookVo>();

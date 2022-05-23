@@ -200,6 +200,7 @@ public class AuthorDao {
 		return count;
 	}
 
+	//작가 전체 출력 메소드
 	public List<AuthorVo> authorSelect() {
 
 		//리스트 준비
