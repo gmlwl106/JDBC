@@ -1,5 +1,7 @@
 package com.javaex.ex02;
 
+import java.util.List;
+
 public class AuthorApp {
 
 	public static void main(String[] args) {
@@ -14,7 +16,13 @@ public class AuthorApp {
 		*/
 		//authorDao.authorDelete(5);
 		
-		authorDao.authorUpdate("이문열", "삼국지 작가", 4);
+		//authorDao.authorUpdate("이문열", "삼국지 작가", 4);
+		
+		List<AuthorVo> authorList = authorDao.authorSelect();
+		System.out.println("author_id author_name author_desc");
+		for(AuthorVo author : authorList) {
+			System.out.println(author.getAuthorID() + " " + author.getAuthorName() + " " + author.getAuthorDesc());
+		}
 		
 	}
 }
