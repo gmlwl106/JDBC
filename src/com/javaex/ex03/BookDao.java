@@ -188,7 +188,7 @@ public class BookDao {
 		return count;
 	}
 
-	//책 검색
+	//책 키워드로 검색
 	public List<BookVo> bookSelect(String keyword) {
 		//리스트 준비
 		List<BookVo> bookList = new ArrayList<BookVo>();
